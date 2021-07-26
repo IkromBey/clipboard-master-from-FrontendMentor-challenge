@@ -94,3 +94,26 @@ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 .mini-intro__text {
   margin-bottom: 2em;
 }
+.product-features {
+  display: flex;
+  max-width: 100%;
+}
+.product-features__img {
+  margin-left: -20px;
+  height: 430px;
+  width: auto;
+  max-width: 45%;
+}
+.product-features__right {
+  display: flex;
+  flex-direction: column;
+  max-width: 325px;
+  margin-left: 4em;
+
+}
+.product-features__item:not(:last-child){
+ margin-bottom: 4em;
+}
+.product-features__heading {
+  margin-bottom: ;
+}
