@@ -4,6 +4,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  margin: 0;
+  padding: 0;
+}
 :root {
   --green: rgb(38, 186, 164);
   --blue: hsl(233, 100%, 69%);
@@ -24,17 +28,19 @@ img {
   max-width: 100%;
   height: auto;
 }
-header {
-  background: url("../img/bg-header-desktop.png");
-  background-position: cover;
+.header-container {
+  width: 100%;
+  background-size:cover;
+  background-image: url("../img/bg-header-desktop.png");
+  background-position:center;
   background-repeat: no-repeat;
+}
+header {
+  padding-top: 80px;
   margin-bottom: 3em;
   
 }
 .container {
-  max-width: 90%;
-  margin: 0 auto;
-  padding-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,6 +58,7 @@ header img {
 }
 .header-text {
   margin-bottom: 3rem;
+  max-width: 400px;
 }
 .header-button {
   margin-bottom: 5rem;
@@ -120,10 +127,11 @@ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   margin: 0 auto;
 }
 .icons {
-  padding: 16px 40px;
+ padding: 16px 40px;
  width: 90%;
  margin: 0 auto;
  display: flex;
+ margin-bottom: 2em;;
 }
 .icon-container {
   margin: 0 auto;
@@ -140,4 +148,61 @@ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 .icon-container__heading {
   margin-bottom: 12px;
   text-transform: capitalize;
+}
+
+.flex-images {
+  width: 1367px;
+  margin: 0 75px 32px;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+.flex-images img {
+  padding: 16px 40px;
+  margin-bottom: 8px;
+}
+
+.apps {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2em;
+}
+.apps-button {
+  padding: 16px 32px;
+}
+footer {
+    background: rgba(159, 171, 178, 0.5);
+    padding-bottom: 2em;
+}
+.footer-container {
+  /* background: rgba(159, 171, 178, 0.5); */
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 40px;
+  width: 90%;
+  
+}
+.footer-links__ul {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 513px;
+}
+.footer-links__ul li {
+  list-style-type: none;
+  padding: 1em 1.5em;
+  margin-right: 2em;
+}
+.footer-links__ul a {
+  color: var(--grey);
+  text-decoration: none;
+}
+.social-links {
+  margin-right: 50px;
+}
+.social-links i {
+  color: var(--dark-blue);
+  margin-left: 32px;
+  
 }
