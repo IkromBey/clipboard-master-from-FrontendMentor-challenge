@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --green: rgb(38, 186, 164);
+  --blue: hsl(233, 100%, 69%);
+  --dark-blue: hsl(210, 10%, 33%);
+  --grey: #9fabb2;
+}
+body {
+   font-family: "Bai Jamjuree",
+   sans-serif;
+   color: var(--grey);
+}
+h1,
+h2 {
+  color: var(--dark-blue);
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+header {
+  background: url("../img/bg-header-desktop.png");
+  background-position: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 3em;
+  
+}
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+header img {
+  margin-bottom: 2rem;
+}
+.header-heading {
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+  font-size: 2em;
+}
+.header-text {
+  margin-bottom: 3rem;
+}
+.header-button {
+  margin-bottom: 5rem;
+}
+.button {
+  color: #fff;
+  text-decoration: none;
+  padding: 1em 2em;
+  border-radius: 100px;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.button:hover {
+  transition: .3s ease;
+  background: transparent;
+  color:hsl(233, 100%, 69%);
+  cursor: pointer;
+  outline: none;
+}
+.ios {
+  background-color: var(--green);
+}
+.mac {
+  background-color: var(--blue);
+}
+.button:not(:last-child) {
+  margin-right: 1em;
+}
+.mini-intro {
+  text-align: center;
+  width: 90%;
+  max-width: 45em;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  padding: 1em 2em;
+}
+.mini-intro__heading {
+  margin-bottom: 0.5em;
+  font-size: 1.5rem;
+}
+.mini-intro__text {
+  margin-bottom: 2em;
+}
